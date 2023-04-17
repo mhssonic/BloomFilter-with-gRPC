@@ -5,10 +5,6 @@ import (
 	"context"
 )
 
-const m uint64 = 350 * 1e7
-
-var bitArray = make([]bool, m)
-
 type ServerTemp interface {
 }
 
