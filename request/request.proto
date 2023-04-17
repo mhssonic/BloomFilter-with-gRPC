@@ -1,0 +1,14 @@
+syntax="proto3";
+option go_package = "./request";
+message Message{
+  string body = 1;
+}
+
+message Bool{
+  bool body = 1;
+}
+
+service BloomFilter{
+  rpc AddString(Message) returns(Message){}
+  rpc IsThere(Message) returns(Bool){}
+}
